@@ -1,0 +1,155 @@
+Hello world action
+
+Set up job   										3s
+Current runner version: '2.280.1'
+Operating System
+Virtual Environment
+Virtual Environment Provisioner
+GITHUB_TOKEN Permissions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v1' (SHA:50fbc622fc4ef5163becd7fab6573eac35f8462e)
+
+Run actions/checkout@v1                                                           		1s
+Run actions/checkout@v1
+  with:
+    clean: true
+Syncing repository: Jiawei41/hello-github-actions
+git version
+git version 2.32.0
+git lfs version
+git-lfs/2.13.3 (GitHub; linux amd64; go 1.16.2)
+git init "/home/runner/work/hello-github-actions/hello-github-actions"
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/runner/work/hello-github-actions/hello-github-actions/.git/
+git remote add origin https://github.com/Jiawei41/hello-github-actions
+git config gc.auto 0
+git config --get-all http.https://github.com/Jiawei41/hello-github-actions.extraheader
+git -c http.extraheader="AUTHORIZATION: basic ***" fetch --tags --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/*
+remote: Enumerating objects: 32, done.        
+remote: Counting objects:   3% (1/32)        
+remote: Counting objects:   6% (2/32)        
+remote: Counting objects:   9% (3/32)        
+remote: Counting objects:  12% (4/32)        
+remote: Counting objects:  15% (5/32)        
+remote: Counting objects:  18% (6/32)        
+remote: Counting objects:  21% (7/32)        
+remote: Counting objects:  25% (8/32)        
+remote: Counting objects:  28% (9/32)        
+remote: Counting objects:  31% (10/32)        
+remote: Counting objects:  34% (11/32)        
+remote: Counting objects:  37% (12/32)        
+remote: Counting objects:  40% (13/32)        
+remote: Counting objects:  43% (14/32)        
+remote: Counting objects:  46% (15/32)        
+remote: Counting objects:  50% (16/32)        
+remote: Counting objects:  53% (17/32)        
+remote: Counting objects:  56% (18/32)        
+remote: Counting objects:  59% (19/32)        
+remote: Counting objects:  62% (20/32)        
+remote: Counting objects:  65% (21/32)        
+remote: Counting objects:  68% (22/32)        
+remote: Counting objects:  71% (23/32)        
+remote: Counting objects:  75% (24/32)        
+remote: Counting objects:  78% (25/32)        
+remote: Counting objects:  81% (26/32)        
+remote: Counting objects:  84% (27/32)        
+remote: Counting objects:  87% (28/32)        
+remote: Counting objects:  90% (29/32)        
+remote: Counting objects:  93% (30/32)        
+remote: Counting objects:  96% (31/32)        
+remote: Counting objects: 100% (32/32)        
+remote: Counting objects: 100% (32/32), done.        
+remote: Compressing objects:   4% (1/25)        
+remote: Compressing objects:   8% (2/25)        
+remote: Compressing objects:  12% (3/25)        
+remote: Compressing objects:  16% (4/25)        
+remote: Compressing objects:  20% (5/25)        
+remote: Compressing objects:  24% (6/25)        
+remote: Compressing objects:  28% (7/25)        
+remote: Compressing objects:  32% (8/25)        
+remote: Compressing objects:  36% (9/25)        
+remote: Compressing objects:  40% (10/25)        
+remote: Compressing objects:  44% (11/25)        
+remote: Compressing objects:  48% (12/25)        
+remote: Compressing objects:  52% (13/25)        
+remote: Compressing objects:  56% (14/25)        
+remote: Compressing objects:  60% (15/25)        
+remote: Compressing objects:  64% (16/25)        
+remote: Compressing objects:  68% (17/25)        
+remote: Compressing objects:  72% (18/25)        
+remote: Compressing objects:  76% (19/25)        
+remote: Compressing objects:  80% (20/25)        
+remote: Compressing objects:  84% (21/25)        
+remote: Compressing objects:  88% (22/25)        
+remote: Compressing objects:  92% (23/25)        
+remote: Compressing objects:  96% (24/25)        
+remote: Compressing objects: 100% (25/25)        
+remote: Compressing objects: 100% (25/25), done.        
+remote: Total 32 (delta 6), reused 9 (delta 1), pack-reused 0        
+From https://github.com/Jiawei41/hello-github-actions
+ * [new branch]      main       -> origin/main
+git checkout --progress --force f66fa3b0741f442658cbe5434198f2fea51cfe3e
+Note: switching to 'f66fa3b0741f442658cbe5434198f2fea51cfe3e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f66fa3b modified README
+
+Run /./action-a										5s
+Run ./action-a
+  with:
+    MY_NAME: Mona
+Building docker image
+  Dockerfile for action: '/home/runner/work/hello-github-actions/hello-github-actions/./action-a/Dockerfile'.
+  /usr/bin/docker build -t 48c8ce:f850b57ac4555353af7f0cec0db71476 -f "/home/runner/work/hello-github-actions/hello-github-actions/./action-a/Dockerfile" "/home/runner/work/hello-github-actions/hello-github-actions/action-a"
+  Sending build context to Docker daemon  4.096kB
+  
+  Step 1/4 : FROM debian:9.5-slim
+  9.5-slim: Pulling from library/debian
+  f17d81b4b692: Pulling fs layer
+  f17d81b4b692: Verifying Checksum
+  f17d81b4b692: Download complete
+  f17d81b4b692: Pull complete
+  Digest: sha256:ef6be890318a105f7401d0504c01c2888daa5d9e45b308cf0e45c7cb8e44634f
+  Status: Downloaded newer image for debian:9.5-slim
+   ---> 4b4471f624dc
+  Step 2/4 : ADD entrypoint.sh /entrypoint.sh
+   ---> 4b53d910421e
+  Step 3/4 : RUN chmod +x /entrypoint.sh
+   ---> Running in 39ea1055a3e4
+  Removing intermediate container 39ea1055a3e4
+   ---> 0fb9286ec23a
+  Step 4/4 : ENTRYPOINT ["/entrypoint.sh"]
+   ---> Running in 254ba0bb4c9c
+  Removing intermediate container 254ba0bb4c9c
+   ---> 5e4176aedff9
+  Successfully built 5e4176aedff9
+  Successfully tagged 48c8ce:f850b57ac4555353af7f0cec0db71476
+/usr/bin/docker run --name c8cef850b57ac4555353af7f0cec0db71476_bdb415 --label 48c8ce --workdir /github/workspace --rm -e INPUT_MY_NAME -e HOME -e GITHUB_JOB -e GITHUB_REF -e GITHUB_SHA -e GITHUB_REPOSITORY -e GITHUB_REPOSITORY_OWNER -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_RETENTION_DAYS -e GITHUB_ACTOR -e GITHUB_WORKFLOW -e GITHUB_HEAD_REF -e GITHUB_BASE_REF -e GITHUB_EVENT_NAME -e GITHUB_SERVER_URL -e GITHUB_API_URL -e GITHUB_GRAPHQL_URL -e GITHUB_WORKSPACE -e GITHUB_ACTION -e GITHUB_EVENT_PATH -e GITHUB_ACTION_REPOSITORY -e GITHUB_ACTION_REF -e GITHUB_PATH -e GITHUB_ENV -e RUNNER_OS -e RUNNER_TOOL_CACHE -e RUNNER_TEMP -e RUNNER_WORKSPACE -e ACTIONS_RUNTIME_URL -e ACTIONS_RUNTIME_TOKEN -e ACTIONS_CACHE_URL -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/hello-github-actions/hello-github-actions":"/github/workspace" 48c8ce:f850b57ac4555353af7f0cec0db71476
+Hello world my name is Mona
+Complete job                                                                            0s
+Cleaning up orphan processes
